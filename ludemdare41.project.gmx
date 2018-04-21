@@ -3,13 +3,59 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="1110" name="datafiles"/>
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\test</sprite>
+    <sprite>sprites\spr_spikes</sprite>
+    <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_enemy</sprite>
+    <sprites name="menu">
+      <sprite>sprites\spr_options</sprite>
+      <sprite>sprites\spr_credits</sprite>
+      <sprite>sprites\spr_play</sprite>
+      <sprite>sprites\spr_background_main</sprite>
+    </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background0</background>
+  </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <scripts name="player">
+      <script>scripts\scr_player_input.gml</script>
+      <script>scripts\scr_player_move.gml</script>
+      <script>scripts\scr_player_collision.gml</script>
+    </scripts>
+    <script>scripts\scr_highlight.gml</script>
+    <script>scripts\scr_gen_spikes.gml</script>
+    <script>scripts\scr_death.gml</script>
+    <script>scripts\scr_obj_check.gml</script>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\f_airstrike</font>
+    <font>fonts\font3</font>
+  </fonts>
+  <objects name="objects">
+    <objects name="obj_menu">
+      <object>objects\obj_backgorund_main</object>
+      <object>objects\obj_credits</object>
+      <object>objects\obj_mousetracker</object>
+      <object>objects\obj_options</object>
+      <object>objects\obj_play</object>
+    </objects>
+    <object>objects\obj_player</object>
+    <object>objects\obj_view</object>
+    <objects name="hazards">
+      <object>objects\obj_spikes</object>
+      <object>objects\obj_enemy</object>
+      <object>objects\obj_spawn_enemy</object>
+    </objects>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_main</room>
+    <room>rooms\rm_game1</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
