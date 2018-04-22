@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>vspeed = 15;
+</string>
           </argument>
         </arguments>
       </action>
@@ -48,7 +49,7 @@
           <argument>
             <kind>1</kind>
             <string>//if on screen
-hspeed = 8
+vspeed = 15
 distance_player = distance_to_object(obj_player);
 if (distance_player &gt; 1200){
     instance_destroy(id)
