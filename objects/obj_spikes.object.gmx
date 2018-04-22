@@ -77,8 +77,10 @@ if (spike_delay &lt;= 0){
     
     scr_obj_check(obj_enemy);
     if (obj_here = 1){
-        instance_destroy(inst_id)
+        with inst_id{
+            hp = 0
         }
+    }
 }
     
     //retract spikes after 45 frames, reset  

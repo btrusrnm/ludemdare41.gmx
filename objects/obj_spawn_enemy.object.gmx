@@ -50,7 +50,7 @@ spawn_timer = 120
           <argument>
             <kind>1</kind>
             <string>//Spawn Enemies
-if(spawn_timer &gt; 0){
+if spawn_timer &gt; 0{
     spawn_timer = spawn_timer - 1
 }
 else{
